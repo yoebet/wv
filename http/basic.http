@@ -1,0 +1,48 @@
+
+# index / or /v1
+GET {{base}}/v1
+Accept: application/json
+
+>> basic/index.json
+
+###
+
+# meta
+GET {{base}}/v1/meta
+Accept: application/json
+
+>> basic/meta.json
+
+###
+
+# schema
+GET {{base}}/v1/schema
+Accept: application/json
+
+>> basic/schema.json
+
+###
+
+# live
+GET {{base}}/v1/.well-known/live
+Accept: application/json
+
+>> basic/live.json
+
+###
+
+# ready
+GET {{base}}/v1/.well-known/ready
+Accept: application/json
+
+>> basic/ready.json
+
+###
+
+# openid-configuration
+GET {{base}}/v1/.well-known/openid-configuration
+Accept: application/json
+
+>> basic/openid-configuration.json
+
+###
