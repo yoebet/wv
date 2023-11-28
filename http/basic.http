@@ -18,8 +18,18 @@ Accept: application/json
 # schema
 GET {{base}}/v1/schema
 Accept: application/json
+Authorization: Bearer {{apikey}}
 
 >> basic/schema.json
+
+###
+
+# schema a
+GET {{base}}/v1/schema/Document_fyj18q0753jotqgbbiep5xvr8fyeb8xc
+Accept: application/json
+Authorization: Bearer {{apikey}}
+
+>> basic/schema_a.json
 
 ###
 
@@ -44,5 +54,14 @@ GET {{base}}/v1/.well-known/openid-configuration
 Accept: application/json
 
 >> basic/openid-configuration.json
+
+###
+
+# objects
+GET {{base}}/v1/objects?limit=2
+Accept: application/json
+Authorization: Bearer {{apikey}}
+
+>> basic/objects.json
 
 ###
